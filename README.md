@@ -40,14 +40,14 @@ P_net = P_battery - P_solar(t)  (net battery drain)
 ### Solar Model
 I(t) = 1073 × exp(-0.5 × ((t - 43200) / 11600)²)   W/m²
 P_solar(t) = I(t) × η_panel × A_panel
-           = I(t) × 0.225 × 4.0
+           = I(t) × 0.24 × 6.0
 | Parameter | Value | Source |
 | I_peak | 1073 W/m² | Given |
 | t_noon | 43200 s (12:00 PM) | Given |
 | σ | 11600 s | Given |
-| η_panel | 22.5% 
-| A_panel | 4.0 m²
-| Peak P_solar | 966 W| At solar noon |
+| η_panel | 24% 
+| A_panel | 6.0 m²
+| Peak P_solar | 1545.12 W| At solar noon |
 | Total energy 8AM–5PM | 6493 Wh | Integrated Gaussian |
 ### Spatial Resolution
 Chosen: 100 m
